@@ -264,7 +264,8 @@ position: relative;
     padding: 40px 30px;
     max-width: 700px;
     color: black;
-    background-color: white;
+
+    
     border-radius: 16px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.15);
     font-size: 28px;
@@ -376,23 +377,45 @@ position: relative;
    
    
 /* ...existing code... */
-.slideshow-container  {
-  max-width: 100px;      /* Match your content boxes */
-  margin: 40px auto;     /* Space above/below and center horizontally */
+/* Fix slideshow container for proper centering */
+.slideshow-container {
+  max-width: 1200px;      /* Match your image width */
+  width: 100%;
+  margin: 40px auto;
   position: relative;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   border-radius: 16px;
-  background: #fff;
-  padding: 20px 0;
   z-index: 1;
-  right: 20%;
+  right: 0;               /* Remove offset */
 }
-
 .slideshow-container img{
   width:1200px;
   height: 800px;
 }
 
-.dot {
+.dot, .prev, .next,  .numbertext {
   display: none !important;
+}
+body{
+ background-color:antiquewhite ;
+}
+
+
+.centered {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white; /* Or any color that stands out */
+  font-size: 48px; /* Adjust as needed */
+  font-weight: bold;
+  z-index: 2;
+  pointer-events: none; /* So it doesn't block clicks */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Optional: for better readability */
+}
+
+.slideshow-container {
+  position: relative;
+  text-align: center;
+  color: white;
 }

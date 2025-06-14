@@ -32,7 +32,7 @@ function currentSlide(n) {
 function autoShowSlides() {
   slideIndex++;
   showSlides(slideIndex);
-  slideTimer = setTimeout(autoShowSlides, 3000); // Change image every 3 seconds
+  slideTimer = setTimeout(autoShowSlides, 5000); // Change image every 3 seconds
 }
 
 // Start slideshow when page loads
