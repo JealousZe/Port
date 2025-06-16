@@ -197,16 +197,16 @@ text-align: center;
     outline: none;
     cursor: pointer;
     transition: background 0.2s;
-    font-family: "Tangerine", cursive;
+  
 }
 
 
 .half-btn:first-child {
-    background: #f0f0f0;
+    background-color: wheat;
 }
 
 .half-btn:last-child {
-    background: #d0d0d0;
+    background: wheat;
 }
 
 .half-btn:hover {
@@ -216,3 +216,8 @@ text-align: center;
     font size: 8rem;
 
 } 
+
+/* Change the background color of the whole page */
+body {
+    background-color:antiquewhite; /* Replace with your desired color */
+}
