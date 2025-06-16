@@ -1,0 +1,218 @@
+
+
+
+.tangerine-regular {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tangerine-bold {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  
+  
+
+  .main{
+text-align: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin: 0px;
+    padding: 0px;
+  } 
+
+  .text{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 60px;
+    font-weight: normal;}
+
+
+  .text2{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 44px;
+    font-weight: normal;  }
+    
+    
+.social-logos {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px; /* space between logos */
+  margin: 40px 0 20px 0;
+
+}
+
+
+.Github-logo{
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    right: 40%;
+      background-color: gray
+}
+.LinkedIn-logo{
+    width: 120px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    right: 60%;
+    background-color:gray;
+    
+}
+  .Github-logo:hover, .LinkedIn-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+    color: gray;
+    background-color: gray;
+    border-color: gray;
+  }
+  .about-me{
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+    
+  bottom: 10%;
+  }
+  .Projects{
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+   
+    nav-up: 10%; 
+    right: 10%;
+  }
+
+
+
+
+.about-me, .Projects, .Contact, .active, .Work-Experience, .Post {
+    font-size: 30px;
+    
+    text-align: center;
+    color: white
+}
+
+.about-me, .Projects, .Contact, .active, .Work-Experience, .Post::active {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set text color */}
+
+
+    
+.topnav {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 5px; /* Space between navigation links */
+    margin-left: auto; /* Push navigation links to the right */
+    font-size: 24px; /* Adjust font size */
+}
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+  
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+ *{    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;      /* Center items vertically */
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    background-color: gray;
+    color: black;
+}
+
+.menu a, .menu span, .menu div {
+    margin-left: 0; /* Remove any left margin */
+    margin-right: 20px; /* Optional: space between items */
+    font-size: 24px;
+}
+
+/* Add this for the Introduction box styling */
+
+
+.h1 h2 h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+.body{
+    background-color: black;
+}
+
+
+
+.half-page-buttons {
+    display: flex;
+    flex-direction: row; /* Change from column to row */
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Adjust if needed */
+}
+
+.half-btn {
+    flex: 1;
+    height: 100vh; /* Make each button fill the height */
+    width: 100%;   /* Remove or keep for safety */
+    font-size: 6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: "Tangerine", cursive;
+}
+
+
+.half-btn:first-child {
+    background: #f0f0f0;
+}
+
+.half-btn:last-child {
+    background: #d0d0d0;
+}
+
+.half-btn:hover {
+    background: #c0c0c0; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+    font size: 8rem;
+
+} 
