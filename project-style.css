@@ -109,30 +109,32 @@ text-align: center;
 
 
     
-.topnav {
+    
+.menu {
     display: flex;
     align-items: center; /* Align items vertically */
-    gap: 5px; /* Space between navigation links */
-    margin-left: auto; /* Push navigation links to the right */
-    font-size: 24px; /* Adjust font size */
+    gap: 0.3125rem; /* Space between navigation links */
+  
+    font-size: 1.5rem; /* Adjust font size */
+    width: 100vw;
 }
-.topnav a {
+.menu a {
   float: left;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.875rem 1rem;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.menu a:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
     transition: transform 0.3s ease; /* Smooth transition */
   
 }
 
-.topnav a.active {
+.menu a.active {
   background-color: black;
   color: white;
 }
@@ -146,22 +148,19 @@ text-align: center;
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center;      /* Center items vertically */
-    width: 100%;
+    width: 100vw;             /* Make sure it spans the viewport */
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid gray;
+    border: 0.0625rem solid gray;
     background-color: gray;
     color: black;
+    margin: 0 auto;           /* Center the menu bar itself */
 }
 
 .menu a, .menu span, .menu div {
-    margin-left: 0; /* Remove any left margin */
-    margin-right: 20px; /* Optional: space between items */
-    font-size: 24px;
+    margin: 0 1.25rem;        /* Equal space on both sides */
+    font-size: 1.5rem;
 }
-
-/* Add this for the Introduction box styling */
-
 
 
 

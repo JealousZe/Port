@@ -246,6 +246,7 @@ position: relative;
 
 }
 
+
 .Roadmap  {
     
 position: relative;
@@ -442,47 +443,3 @@ body{
   text-align: center;
 }
 
-@media (max-width: 600px;){
-  .text{
-    visibility: collapse;
-  }
-  .phonetext{
-    visibility: visible;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0rem;
-    padding: 0rem;
-  }
-
-  .main{
-    width: 100%;
-  }
-  .menu{
-    width: 100%;
-  }
-  
-  .slideshow-container img {
-    width: 500px; /* Full width for smaller screens */
-    height: auto; /* Maintain aspect ratio */
-  }
-}
-
-body {
-  min-width: 1400px; /* or your preferred width */
-  min-height: 800px;  /* or your preferred height */
-  overflow-x: auto;
-}
-
-.main-container {
-  width: 1400px;
-  margin: 0 auto;
-  /* Optionally, set a fixed height */
-  /* height: 800px; */
-}
-
-@media (max-width: 1399px) {
-  body {
-    overflow-x: scroll;
-  }
-}
-// ...existing code...
