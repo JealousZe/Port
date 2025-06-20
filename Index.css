@@ -24,6 +24,7 @@ text-align: center;
     font-size: 6.25rem;
     margin: 0rem;
     padding: 0rem;
+    width: 100%;
   } 
 
   .text{
@@ -109,14 +110,15 @@ text-align: center;
 
 
     
-.topnav {
+.menu {
     display: flex;
     align-items: center; /* Align items vertically */
     gap: 0.3125rem; /* Space between navigation links */
-    margin-left: auto; /* Push navigation links to the right */
+  
     font-size: 1.5rem; /* Adjust font size */
+    width: 100vw;
 }
-.topnav a {
+.menu a {
   float: left;
   color: white;
   text-align: center;
@@ -126,13 +128,13 @@ text-align: center;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.menu a:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
     transition: transform 0.3s ease; /* Smooth transition */
   
 }
 
-.topnav a.active {
+.menu a.active {
   background-color: black;
   color: white;
 }
@@ -146,17 +148,17 @@ text-align: center;
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center;      /* Center items vertically */
-    width: 100%;
+    width: 100vw;             /* Make sure it spans the viewport */
     padding: 0;
     box-sizing: border-box;
     border: 0.0625rem solid gray;
     background-color: gray;
     color: black;
+    margin: 0 auto;           /* Center the menu bar itself */
 }
 
 .menu a, .menu span, .menu div {
-    margin-left: 0; /* Remove any left margin */
-    margin-right: 1.25rem; /* Optional: space between items */
+    margin: 0 1.25rem;        /* Equal space on both sides */
     font-size: 1.5rem;
 }
 
@@ -200,6 +202,7 @@ text-align: center;
     text-align: center;
     float: left;                  /* Align to the right */
     clear: left;                  /* Prevents overlap with above floated elements */
+    width: 30vw;
 }
 
 .softwaredevelopment {
@@ -218,6 +221,7 @@ position: relative;
     float: right;
     clear : right; /* Prevents overlap with above floated elements */
      right: 0;
+     width: 30vw;
 }
 
 
@@ -238,6 +242,8 @@ position: relative;
     float: right;
     clear : right; /* Prevents overlap with above floated elements */
      right: 0;
+     width: 30vw;
+
 }
 
 .Roadmap  {
@@ -294,6 +300,8 @@ position: relative;
   max-width: 62.5rem;
   position: relative;
   margin: auto;
+width: 30vw;
+ 
 }
 
 /* Hide the images by default */
@@ -391,7 +399,7 @@ position: relative;
   right: 0;               /* Remove offset */
 }
 .slideshow-container img {
-  width: 65rem;   /* Reduced width */
+  width: 30vw;   /* Reduced width */
   height: 50rem;  /* Reduced height */
   object-fit: cover; /* Keeps aspect ratio and fills the box */
 }
@@ -433,3 +441,48 @@ body{
   position: relative;
   text-align: center;
 }
+
+@media (max-width: 600px;){
+  .text{
+    visibility: collapse;
+  }
+  .phonetext{
+    visibility: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .main{
+    width: 100%;
+  }
+  .menu{
+    width: 100%;
+  }
+  
+  .slideshow-container img {
+    width: 500px; /* Full width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+body {
+  min-width: 1400px; /* or your preferred width */
+  min-height: 800px;  /* or your preferred height */
+  overflow-x: auto;
+}
+
+.main-container {
+  width: 1400px;
+  margin: 0 auto;
+  /* Optionally, set a fixed height */
+  /* height: 800px; */
+}
+
+@media (max-width: 1399px) {
+  body {
+    overflow-x: scroll;
+  }
+}
+// ...existing code...
